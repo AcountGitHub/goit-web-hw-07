@@ -1,0 +1,20 @@
+[project]
+name = "goit-web-hw-07"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "artemevtusenko238",email = "artemevtusenko238@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "sqlalchemy (>=2.0.40,<3.0.0)",
+    "faker (>=37.1.0,<38.0.0)",
+    "alembic (>=1.15.2,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
