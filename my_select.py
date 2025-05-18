@@ -185,7 +185,8 @@ def select_12():
     return session.query(Student.fullname, Group.name, Subject.name, Grade.grade,
                          Grade.grade_date).select_from(Grade).join(Student)\
         .join(Group).join(Subject).filter(and_(Group.id == 1, Subject.id == 3,
-                                            Grade.grade_date == subquery)).all()
+                                            Grade.grade_date == subquery))\
+        .order_by(Student.fullname).all()
 
 
 if __name__ == "__main__":
