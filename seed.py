@@ -78,4 +78,4 @@ if __name__ == "__main__":
     insert_data(students)
     insert_data(subjects)
     insert_data(grades)
-    print("PostgreSQL база даних успішно заповнена.")
+    print("PostgreSQL database successfully filled.")
